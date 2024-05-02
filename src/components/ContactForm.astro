@@ -1,0 +1,42 @@
+---
+import { defineState } from "astro-state";
+
+let state = defineState({
+  name: '',
+  email: '',
+  message: '',
+});
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    await fetch('YOUR_FABFORM_ENDPOINT', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(state),
+    });
+    console.log('Form submitted successfully');
+  } catch (error) {
+    console.error('Error submitting form:', error);
+  }
+};
+---
+
+<form on:submit={handleSubmit}>
+  <label>
+    Name:
+    <input bind:value={state.name} type="text" />
+  </label>
+  <label>
+    Email:
+    <input bind:value={state.email} type="email" />
+  </label>
+  <label>
+    Message:
+    <textarea bind:value={state.message}></textarea>
+  </label>
+  <button type="submit">Submit</button>
+</form>

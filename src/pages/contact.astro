@@ -1,0 +1,95 @@
+---
+// Page section components
+import ContactCTA from '../components/ContactCTA.astro';
+import Skills from '../components/Skills.astro';
+import NavAbout from '../components/NavAbout.astro';
+import Hero from '../components/Hero.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+// Frontmatter section
+// Component scripts goes here.
+---
+<BaseLayout title="A propos | Wahel GADER" description="About Wahel GADER">
+    <div class="stack gap-20">
+        <main class="wrapper about">
+            <Hero
+                title="Contactez-moi"
+                tagline=""
+            >
+                <form method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nom :</label>
+                        <input type="text" id="name" name="name" placeholder="Votre nom" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" placeholder="Votre email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </Hero>
+        </main>
+    </div>
+</BaseLayout>
+
+<style>
+    .contact-form {
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: flex;
+        justify-content: start;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 800px;
+        height: 80px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #0f0c29;
+        color: white;
+    }
+
+    textarea {
+        width: 800px;;
+        height: 150px;
+        resize: vertical;
+        background-color: #0f0c29;
+
+    }
+
+    button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 20px;
+        width: 150px;
+        height: 60px;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #0056b3;
+        
+    }
+</style>

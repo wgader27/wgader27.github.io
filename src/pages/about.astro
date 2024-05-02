@@ -1,0 +1,493 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Nav from '../components/Nav.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import NavAbout from '../components/NavAbout.astro'
+---
+
+<BaseLayout title="A propos | Wahel GADER" description="About Wahel GADER">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="A propos"
+				tagline=""
+			>
+			<NavAbout/>
+			
+			<img
+				style="max-width: 100%; margin: 0 auto;"
+				width="353"
+				height="1273"
+				src="/assets/portrait.jpg"
+				alt="Wahel GADER"
+			/>
+		
+			</Hero>
+
+			<section id="presentation">
+				<h2 class="section-title">Presentation</h2>
+				<div class="content">
+					<p>
+						Actuellement en <strong>première année de BUT informatique à l'IUT de Clermont Ferrand</strong>, je suis un <strong>étudiant passionné </strong>
+						qui souhaite se spécialiser dans le développement web et mobile. En tant que passionné, j'aime 
+					<strong>concevoir</strong> et <strong>réaliser des projets universitaires et personnels</strong> dans le but d'augmenter en compétences. 
+						A la fois fois <strong>curieux </strong>et <strong>sérieux</strong>,j’essaye de comprendre en profondeur chaque concept afin de pousser la réussite de mes projets.
+					</p>
+				</div>
+				<div class="content">
+					<p>
+						En plus de ma formation, je pratique en tant que <strong>développeur full stack</strong>, travaillant sur divers <strong>projets personnels</strong> ainsi que des <strong>projets professionnels</strong>. 
+						Il m'arrive régulièrement de créer des sites web pour des entreprises.
+					</p>
+				</div>
+				<div class="content">
+					<p>
+						Si vous souhaitez en apprendre plus sur moi, ou me contacter, n'hésitez plus, vous pouvez explorer ce site ou télécharger mon CV ! :)
+					</p>
+				</div>
+
+				<div class="content">
+					<div id="download-cv">
+						<a href="/src/resources/cv.pdf" download>
+							<img src="/src/resources/download.png" alt="Download Icon" height="50px" width="50px">
+						</a>
+					</div>
+				</div>
+			
+			<section id="soft-skills">
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>officia unde omnis</p>
+				</div>
+			</section>
+			<section id="passion">
+				<h2 class="section-title">Skills</h2>
+				<div class="content">
+					<p>Nimporte quoi</p>
+				</div>
+				 
+			</section>
+		</main>
+		<section id="edu">
+						<!-- Education Section -->
+						<section id="education">
+							<div class="education">
+							  <div class="edu-title">
+								<h1>Parcours scolaire</h1>
+								<span>———o———</span>
+							  </div>
+						</section>
+			
+						<div class="row">
+							<div class="col1">
+							  <h2>BUT Informatique</h2>
+							  <p class="date-edu">2023 - maintenant</p>
+							  <p class="desc-edu">IUT Clermont Ferrand</p>
+							</div>
+				  
+							<div class="col2">
+							  <ul>
+								<li></li>
+								<br />
+								<br />
+								<br />
+								<li></li>
+							  </ul>
+							</div>
+				  
+							<div class="col3">
+							  <h2>Baccalauréat générale</h2>
+							  <p class="date-edu">2022 - 2023</p>
+							  <p class="desc-edu">Lycée Marguerite de Valois, Angoulême</p>
+							</div>
+						  </div>
+						</section>  
+					</section>
+					  <!-- Skills Section -->
+					  <section id="skill">
+						<div class="skill">
+						  <div class="skill-title">
+							<h1>Compétences</h1>
+							<span>——o—o——</span>
+							<p>Langage de programmation<br />et outils.</p>
+						  </div>
+				  
+						  <div class="flex-wrapper">
+							<div class="items flex-grid">
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/html.png" alt="" />
+								<p>HTML</p>
+								<p class="medium">medium</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/css.svg" alt="" />
+								<p>CSS</p>
+								<p class="medium">medium</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/js.png" alt="" />
+								<p>JavaScript</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/php.svg" alt="" width="80" />
+								<p>PHP</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/bootstrap.png" alt="" width="80" />
+								<p>Bootstrap</p>
+								<p class="medium">medium</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/codeigniter.png" alt="" width="60" />
+								<p style="margin-left: -5px">CodeIgniter</p>
+								<p class="basic">basic</p>
+							  </div>
+							</div>
+				  
+							<div class="items flex-grid">
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/laravel.png" alt="" />
+								<p>Laravel</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/reactjs.png" alt="" />
+								<p>ReactJS</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/phpmyadmin.png" alt="" />
+								<p style="margin-left: -14px">phpMyAdmin</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/github.png" alt="" />
+								<p>Github</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/postman.png" alt="" />
+								<p>Postman</p>
+								<p class="basic">basic</p>
+							  </div>
+							  <div class="d-col-1 t-col-4 m-col-12">
+								<img src="assets/figma.png" alt="" />
+								<p>Figma</p>
+								<p class="basic">basic</p>
+							  </div>
+							</div>
+						  </div>
+						</div>
+					  </section>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	#download-cv{
+        background-color: purple;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    /* Style du bouton au survol */
+    #download-cv:hover {
+        background-color: #302b63;
+    }
+
+    /* Style du conteneur du bouton */
+    #download-cv {
+        text-align: center;
+    }
+
+
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
+
+      
+    
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+
+
+.edu {
+  /* height: 80vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 10% 10%;
+  height: 200px;;
+  margin: 10% 0;
+  background-color: #0284c7;
+}
+
+.edu span {
+  font-weight: bold;
+}
+
+#about .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transform: translateY(-5%);
+  height: 150px;
+}
+
+#edu .wave {
+  position: absolute;
+  transform: translateX(-10%);
+  width: 100%;
+  bottom: 100;
+}
+
+.edu-title {
+  margin: 30px 50px;
+  text-align: center;
+  color: #fff;
+}
+
+.edu-title h1 {
+  font-size: 40px;
+  margin-top: 3.5rem;
+}
+
+#education .row {
+  margin: 30px;
+  padding: 5rem 20px 0;
+  display: flex;
+}
+
+.edu h2 {
+  color: #475569;
+}
+
+.date-edu {
+  padding: 8px 0;
+  font-size: 16px;
+  color: #94a3b8;
+}
+
+.edu-title p {
+  font-size: 20px;
+}
+
+.desc-edu {
+  color: #475569;
+}
+
+.col1 {
+  flex: 47%;
+  width: 550px;;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-left: 200px;
+  box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.3);
+  transition: 0.2s;
+}
+
+.col1:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.6);
+}
+
+.col2 {
+flex: 6%;
+  width:400px;
+  height: 200px;
+  margin-left: 700px;
+  justify-content: center;
+	align-content: center;
+}
+
+.col2 ul {
+  list-style: none;
+}
+
+.col2 ul > li {
+  position: relative;
+}
+
+
+
+.col2 ul > li:before {
+  content: "\25CF";
+  margin-left: 100px;
+  margin-right: 10px;
+  font-size: 80px;
+  color: #334155;
+  z-index: 1;
+  position: inherit;
+}
+
+.col2 ul > li:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  border-left: 6px solid rgb(255, 255, 255);
+  margin-left: 34%;
+  margin-top: -2.5rem;
+  height: 13rem;
+}
+
+.col2 ul > li:first-of-type:after {
+  top: 50%;
+}
+
+.col2 ul > li:last-of-type:after {
+  top: -50%;
+}
+
+.col3 {
+  flex: 47%;
+  background-color: #fff;
+  width: 550px;
+  border-radius: 20px;
+  padding: 15px 20px;
+  box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.3);
+  margin: 10px;
+  margin-left: 1000px;
+  transition: 0.2s;
+}
+
+.col3:hover {
+  transform: scale(1.03);
+  box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.6);
+  transition: 0.2s;
+}
+
+.skill {
+  /* height: 80vh; */
+  padding: 2% 10% 10%;
+  margin: 10% 0 0;
+  
+}
+
+.skill span {
+  color: #0284c7;
+  font-weight: bold;
+}
+
+.skill-title {
+  color: #1e293b;
+  text-align: center;
+}
+
+.skill-title h1 {
+  font-size: 40px;
+  margin-top: 3.5rem;
+}
+
+.skill-title p {
+  font-size: 20px;
+}
+
+.flex-wrapper {
+  margin: 8rem 0 0;
+}
+
+.flex-grid {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.items img {
+  height: 4.5rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.items p {
+  color: #717d8d;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: -5px;
+}
+
+.items .medium {
+  background-color: #fef3c7;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #de8821;
+  text-transform: uppercase;
+}
+
+.items .basic {
+  background-color: #e0f2fe;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  color: #49a7d8;
+  text-transform: uppercase;
+}
+</style>
