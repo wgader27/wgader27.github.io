@@ -1,7 +1,7 @@
 ---
 title: Boutique affiliation
 publishDate: 2020-03-02 00:00:00
-img: /src/resources/boutique_affiliation.png
+img: /public/boutique_affiliation.png
 img_alt: boutique_affiliation
 description: Création d'un site web d'affiliation avec des produits qui renvoie vers les sites marchands
 tags:

@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 publishDate: 2019-10-02 00:00:00
-img: /src/resources/accueil.png
+img: /public/accueil.png
 img_alt: portfolio
 description: |
   Ancienne version de mon portfolio.
