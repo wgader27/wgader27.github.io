@@ -1,7 +1,7 @@
 ---
 title: Jeu Space Dodge
 publishDate: 2019-12-01 00:00:00
-img: /src/resources/jeu.png
+img: /public/jeu.png
 img_alt: |
 description: |
   

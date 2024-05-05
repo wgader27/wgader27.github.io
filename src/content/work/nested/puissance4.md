@@ -1,7 +1,7 @@
 ---
 title: Puissance 4
 publishDate: 2024-03-04 00:00:00
-img: /src/resources/puissance4.png
+img: /public/puissance4.png
 img_alt: puissance4
 description: Ce projet était  dans le cadre du BUT Informatique lors de la SAE 2.01  Développement d'une application  
   

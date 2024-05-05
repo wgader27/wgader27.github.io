@@ -6,7 +6,7 @@ Je m'appelle Wahel Gader, étudiant passionné en première année de BUT Inform
 ## 📫 Comment me contacter?
 - **Email**: [wahel.gader27@gmail.com](mailto:wahel.gader27@gmail.com)
 - **LinkedIn**: [Wahel Gader](https://fr.linkedin.com/in/wahel-gader-7463551ba)
-- **GitHub**: [wgader](https://github.com/wgader27)
+- **GitHub**: [wgader27](https://github.com/wgader27)
 
 N'hésite pas à me contacter pour toute question ou opportunité de collaboration!
 
