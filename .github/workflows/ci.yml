@@ -9,8 +9,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: 
-      image: node:18-buster  # Utilisez une image de Docker Hub avec Node.js et installez pnpm dessus si nécessaire.
 
     steps:
       - uses: actions/checkout@v2
@@ -19,13 +17,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '18.x'
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npx pnpm install
+        run: npm install
 
       - name: Build the project
-        run: npx pnpm run build
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
