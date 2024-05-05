@@ -2,7 +2,7 @@
 title: Puissance 4
 publishDate: 2024-03-04 00:00:00
 img: /src/resources/puissance4.png
-img_alt: Pearls of silky soft white cotton, bubble up under vibrant lighting
+img_alt: 
 description: Ce projet était  dans le cadre du BUT Informatique lors de la SAE 2.01  Développement d'une application  
   
 tags:
