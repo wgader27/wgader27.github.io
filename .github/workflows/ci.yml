@@ -19,8 +19,16 @@ jobs:
           node-version: '18.x'
           cache: 'npm'
 
+      - name: Print Node.js and NPM versions
+        run: |
+          node -v
+          npm -v
+
       - name: Install dependencies
         run: npm install
+
+      - name: Print the installed packages
+        run: ls node_modules
 
       - name: Build the project
         run: npm run build
