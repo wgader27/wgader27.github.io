@@ -26,6 +26,9 @@ dependencies:
   axios:
     specifier: ^1.6.8
     version: 1.6.8
+  nodejs:
+    specifier: ^0.0.0
+    version: 0.0.0
   typescript:
     specifier: ^5.4.4
     version: 5.4.4
@@ -3175,6 +3178,10 @@ packages:
 
   /node-releases@2.0.14:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
+    dev: false
+
+  /nodejs@0.0.0:
+    resolution: {integrity: sha512-1V+0HwaB/dhxzidEFc4uJ3k52gLI4B6YBZgJIofjwYCSAkD6CI0me6TDBT2QM2nbGWNxCHcq9/wVynzQYZOhUg==}
     dev: false
 
   /normalize-path@3.0.0:
