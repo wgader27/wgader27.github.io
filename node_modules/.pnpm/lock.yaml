@@ -20,12 +20,18 @@ dependencies:
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.5.16)(tailwindcss@3.4.3)
+  '@emailjs/browser':
+    specifier: ^4.3.3
+    version: 4.3.3
   astro:
     specifier: ^4.5.16
     version: 4.5.16(typescript@5.4.4)
   axios:
     specifier: ^1.6.8
     version: 1.6.8
+  emailjs-com:
+    specifier: ^3.2.0
+    version: 3.2.0
   nodejs:
     specifier: ^0.0.0
     version: 0.0.0
@@ -478,6 +484,11 @@ packages:
       '@babel/helper-string-parser': 7.24.1
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+    dev: false
+
+  /@emailjs/browser@4.3.3:
+    resolution: {integrity: sha512-ltpt2S/WVREIBXptxYAVYBvXb2O6yTUYiRUWF8OLikMxlmiGsIgKpgHppikNd4Df0uAav7jCsQKcOJ3TJFUx5g==}
+    engines: {node: '>=14.0.0'}
     dev: false
 
   /@emmetio/abbreviation@2.3.3:
@@ -1912,6 +1923,12 @@ packages:
 
   /electron-to-chromium@1.4.729:
     resolution: {integrity: sha512-bx7+5Saea/qu14kmPTDHQxkp2UnziG3iajUQu3BxFvCOnpAJdDbMV4rSl+EqFDkkpNNVUFlR1kDfpL59xfy1HA==}
+    dev: false
+
+  /emailjs-com@3.2.0:
+    resolution: {integrity: sha512-Prbz3E1usiAwGjMNYRv6EsJ5c373cX7/AGnZQwOfrpNJrygQJ15+E9OOq4pU8yC977Z5xMetRfc3WmDX6RcjAA==}
+    engines: {node: '>=12.0.0'}
+    deprecated: The SDK name changed to @emailjs/browser
     dev: false
 
   /emmet@2.4.7:
