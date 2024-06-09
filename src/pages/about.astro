@@ -55,8 +55,8 @@ import NavAbout from '../components/NavAbout.astro'
 				
 				
 				<div class="content">
-					<h3>
-						Télécharger mon CV ! :)
+					<h3 style="margin-left:20%;">
+						Télécharger mon CV !  &nbsp; &nbsp; :)
 					</h3>
 				</div>
 
@@ -75,7 +75,7 @@ import NavAbout from '../components/NavAbout.astro'
 							<div class="education">
 							  <div class="edu-title">
 								<h1>Parcours scolaire</h1>
-								<span>———o———</span>
+								<span style="color:#302b63;">———o——————o———</span>
 							  </div>
 						</section>
 			
@@ -185,22 +185,36 @@ import NavAbout from '../components/NavAbout.astro'
 </BaseLayout>
 
 <style>
-	#download-cv{
-        background-color: purple;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
+#download-cv {
+  background-color: rgb(56, 0, 102);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  width: 1000px; 
+   height: 150px;
+}
 
-    /* Style du bouton au survol */
+#download-cv a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
     #download-cv:hover {
         background-color: #302b63;
     }
 
-    /* Style du conteneur du bouton */
     #download-cv {
         text-align: center;
     }
@@ -264,40 +278,22 @@ import NavAbout from '../components/NavAbout.astro'
 </style>
 
       
-    
-
-<style>
+ <style> 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:500");
 
-
 .edu {
-  /* height: 80vh; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2% 10% 10%;
-  height: 200px;;
-  margin: 10% 0;
   background-color: #0284c7;
+  margin: 10% 0;
+  position: relative;
 }
 
 .edu span {
   font-weight: bold;
-}
-
-#about .wave {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  transform: translateY(-5%);
-  height: 150px;
-}
-
-#edu .wave {
-  position: absolute;
-  transform: translateX(-10%);
-  width: 100%;
-  bottom: 100;
 }
 
 .edu-title {
@@ -312,9 +308,13 @@ import NavAbout from '../components/NavAbout.astro'
 }
 
 #education .row {
-  margin: 30px;
-  padding: 5rem 20px 0;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
 }
 
 .edu h2 {
@@ -327,97 +327,111 @@ import NavAbout from '../components/NavAbout.astro'
   color: #94a3b8;
 }
 
-.edu-title p {
-  font-size: 20px;
-}
-
 .desc-edu {
   color: #475569;
 }
 
 .col1 {
-  flex: 47%;
-  width: 550px;;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
   background-color: #fff;
+  margin-left: 10%;
   border-radius: 20px;
   padding: 15px 20px;
-  margin-left: 200px;
   box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.3);
   transition: 0.2s;
+  width: 100%;
+  max-width: 500px;
 }
 
 .col1:hover {
   transform: scale(1.03);
-  transition: 0.2s;
   box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.6);
 }
 
 .col2 {
-flex: 6%;
-  width:400px;
-  height: 200px;
-  margin-left: 700px;
-  justify-content: center;
-	align-content: center;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .col2 ul {
   list-style: none;
+  background-color: whitesmoke;
+  padding: 0;
+  margin: 0;
+  border-radius: 90%;
 }
 
 .col2 ul > li {
   position: relative;
-}
-
-
-
-.col2 ul > li:before {
-  content: "\25CF";
-  margin-left: 100px;
-  margin-right: 10px;
-  font-size: 80px;
-  color: #334155;
-  z-index: 1;
-  position: inherit;
+  width: 20px;
+  height: 20px;
+  background-color: #334155;
+  border-radius: 50%;
+  margin: 30px 0;
 }
 
 .col2 ul > li:after {
-  position: absolute;
-  left: 0;
-  top: 0;
   content: "";
-  border-left: 6px solid rgb(255, 255, 255);
-  margin-left: 34%;
-  margin-top: -2.5rem;
-  height: 13rem;
-}
-
-.col2 ul > li:first-of-type:after {
+  position: absolute;
   top: 50%;
-}
-
-.col2 ul > li:last-of-type:after {
-  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 100%;
+  background-color: #334155;
+  z-index: -1;
 }
 
 .col3 {
-  flex: 47%;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+  margin-left: 60%;
   background-color: #fff;
-  width: 550px;
   border-radius: 20px;
   padding: 15px 20px;
   box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.3);
-  margin: 10px;
-  margin-left: 1000px;
   transition: 0.2s;
+  width: 100%;
+  max-width: 500px;
 }
 
 .col3:hover {
   transform: scale(1.03);
   box-shadow: 1px 10px 15px -1px rgba(255, 255, 255, 0.6);
-  transition: 0.2s;
 }
 
+@media (max-width: 768px) {
+  .edu-title h1 {
+    font-size: 30px;
+  }
+  
+  .edu-title p {
+    font-size: 16px;
+  }
+
+  #education .row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .col1, .col3 {
+    grid-column: 1 / 2;
+    width: 100%;
+  }
+
+  .col2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .col2 ul > li:after {
+    height: 100%;
+  }
+}
 .skill {
   /* height: 80vh; */
   padding: 2% 10% 10%;
@@ -431,7 +445,7 @@ flex: 6%;
 }
 
 .skill-title {
-  color: #1e293b;
+  color: #2254a5;
   text-align: center;
 }
 
@@ -462,7 +476,7 @@ flex: 6%;
 }
 
 .items p {
-  color: #717d8d;
+  color: #6790c5;
   font-weight: bold;
   margin-top: 10px;
   margin-bottom: -5px;
