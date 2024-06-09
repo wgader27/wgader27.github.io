@@ -1,21 +1,19 @@
 ---
-// Page section components
-import ContactCTA from '../components/ContactCTA.astro';
-import Skills from '../components/Skills.astro';
-import NavAbout from '../components/NavAbout.astro';
-import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-// Frontmatter section
-// Component scripts goes here.
+import Nav from '../components/Nav.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import NavAbout from '../components/NavAbout.astro';
+import { init, sendForm } from '@emailjs/browser';
 ---
-<BaseLayout title="A propos | Wahel GADER" description="About Wahel GADER">
+<BaseLayout title="Contact | Wahel GADER" description="Contact Wahel GADER">
     <div class="stack gap-20">
         <main class="wrapper about">
             <Hero
                 title="Contactez-moi"
                 tagline=""
             >
-                <form method="POST" class="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div class="form-group">
                         <label for="name">Nom :</label>
                         <input type="text" id="name" name="name" placeholder="Votre nom" required />
@@ -31,14 +29,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                     <div class="form-group">
                         <button type="submit">Envoyer</button>
                     </div>
+                    <p id="success-message" style="display:none;">Message envoyé!</p>
                 </form>
             </Hero>
         </main>
     </div>
-</BaseLayout>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function() {
+    emailjs.init('jWlBfiipNTeADWo5b'); // Votre User ID ici
 
+    var contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_3krnych', 'template_jftfa48', this)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    document.getElementById('success-message').style.display = 'block';
+                    document.getElementById('success-message').style.color = 'green';
+                }, function(error) {
+                    console.error('FAILED...', error);
+                });
+        });
+    }
+});
+
+    </script>
 <style>
-    .contact-form {
+      .contact-form {
         max-width: 500px;
         margin: auto;
     }
@@ -93,3 +112,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         
     }
 </style>
+</style>
+
+    
+    
+</BaseLayout>
