@@ -10,5 +10,3 @@ Je m'appelle Wahel Gader, étudiant passionné en première année de BUT Inform
 
 
 N'hésite pas à me contacter pour toute question ou opportunité de collaboration!
-
-
