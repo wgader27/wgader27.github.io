@@ -1,7 +1,7 @@
 # Bienvenue sur le Portfolio de Wahel Gader 👋
 
 ## 👨‍💻 Qui suis-je?
-Je m'appelle Wahel Gader, étudiant passionné en première année de BUT Informatique à l'IUT de Clermont-Ferrand. Je me spécialise dans le développement web et je suis constamment à la recherche de nouvelles technologies et méthodes pour affiner mes compétences.
+Je m'appelle Wahel Gader, étudiant passionné en première année de BUT MMI à l'IUT de Limoges. Je me spécialise dans le développement web et je suis constamment à la recherche de nouvelles technologies et méthodes pour affiner mes compétences.
 
 ## 📫 Comment me contacter?
 - **Email**: [wahel.gader27@gmail.com](mailto:wahel.gader27@gmail.com)
